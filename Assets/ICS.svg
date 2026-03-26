@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer hexagonal border only - flat-top orientation, no antenna protrusions -->
+  <polygon
+    points="190,100 145,177.9 55,177.9 10,100 55,22.1 145,22.1"
+    fill="none"
+    stroke="#8B44AC"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Chip body centered inside hexagon -->
+  <rect x="60" y="60" width="80" height="80" rx="6" ry="6"
+        fill="none" stroke="#8B44AC" stroke-width="3"/>
+
+  <!-- ICS text centered inside chip -->
+  <text
+    x="100" y="100"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="bold"
+    fill="#8B44AC"
+  >ICS</text>
+</svg>

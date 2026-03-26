@@ -11,4 +11,40 @@
         x:Class="FASandbox.MainWindow"
         Title="FASandbox">
 
+    <!-- ICS Hexagonal Chip Icon
+         Outermost layer: hexagonal border only (no antenna protrusions)
+         Chip body centered inside hexagon
+         ICS text centered inside chip -->
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Canvas Width="200" Height="200">
+            <!-- Outer hexagonal border (flat-top orientation, no fill, no antenna protrusions) -->
+            <Polygon Points="190,100 145,177.9 55,177.9 10,100 55,22.1 145,22.1"
+                     Fill="Transparent"
+                     Stroke="#8B44AC"
+                     StrokeThickness="4"
+                     StrokeJoin="Round" />
+
+            <!-- Chip body centered inside hexagon -->
+            <Border Canvas.Left="60" Canvas.Top="60"
+                    Width="80" Height="80"
+                    CornerRadius="6"
+                    Background="Transparent"
+                    BorderBrush="#8B44AC"
+                    BorderThickness="3" />
+
+            <!-- ICS text centered inside chip -->
+            <Grid Canvas.Left="60" Canvas.Top="60"
+                  Width="80" Height="80">
+                <TextBlock Text="ICS"
+                           FontFamily="Arial"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="#8B44AC"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextAlignment="Center" />
+            </Grid>
+        </Canvas>
+    </Grid>
+
 </Window>
